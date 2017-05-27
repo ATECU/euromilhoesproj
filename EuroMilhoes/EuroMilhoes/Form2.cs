@@ -10,26 +10,16 @@ using System.Windows.Forms;
 
 namespace EuroMilhoes
 {
-    public partial class Form1 : Form
+    public partial class Form2 : Form
     {
-        public Form1()
+        public Form2()
         {
             InitializeComponent();
         }
 
-      
-        private void jogarBtn_Click(object sender, EventArgs e)
+        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
         {
-            Form2 frm = new Form2();
-            frm.Show();     
-            this.Hide();
+            Application.Exit();
         }
-
-        private void sairBtn_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-     
     }
 }
