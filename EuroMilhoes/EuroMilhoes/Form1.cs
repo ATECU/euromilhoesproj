@@ -18,18 +18,23 @@ namespace EuroMilhoes
         }
 
       
-        private void jogarBtn_Click(object sender, EventArgs e)
+     
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void JogarBtn_Click(object sender, EventArgs e)
         {
             Form2 frm = new Form2();
-            frm.Show();     
             this.Hide();
+            frm.Show();
         }
 
-        private void sairBtn_Click(object sender, EventArgs e)
+        private void SairBtn_Click(object sender, EventArgs e)
         {
-           
+            Application.Exit();
         }
-
-     
     }
 }

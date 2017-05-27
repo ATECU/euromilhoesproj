@@ -28,47 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sairBtn = new System.Windows.Forms.Button();
-            this.jogarBtn = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.SairBtn = new System.Windows.Forms.Button();
+            this.JogarBtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // sairBtn
+            // SairBtn
             // 
-            this.sairBtn.Location = new System.Drawing.Point(197, 227);
-            this.sairBtn.Name = "sairBtn";
-            this.sairBtn.Size = new System.Drawing.Size(75, 23);
-            this.sairBtn.TabIndex = 0;
-            this.sairBtn.Text = "Sair";
-            this.sairBtn.UseVisualStyleBackColor = true;
-            this.sairBtn.Click += new System.EventHandler(this.sairBtn_Click);
+            this.SairBtn.BackColor = System.Drawing.Color.LightGray;
+            this.SairBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.SairBtn.FlatAppearance.BorderSize = 0;
+            this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SairBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.SairBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.SairBtn.Location = new System.Drawing.Point(434, 314);
+            this.SairBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.SairBtn.Name = "SairBtn";
+            this.SairBtn.Size = new System.Drawing.Size(139, 37);
+            this.SairBtn.TabIndex = 0;
+            this.SairBtn.Text = "SAIR";
+            this.SairBtn.UseVisualStyleBackColor = false;
+            this.SairBtn.Click += new System.EventHandler(this.SairBtn_Click);
             // 
-            // jogarBtn
+            // JogarBtn
             // 
-            this.jogarBtn.Location = new System.Drawing.Point(13, 227);
-            this.jogarBtn.Name = "jogarBtn";
-            this.jogarBtn.Size = new System.Drawing.Size(75, 23);
-            this.jogarBtn.TabIndex = 1;
-            this.jogarBtn.Text = "Jogar";
-            this.jogarBtn.UseVisualStyleBackColor = true;
-            this.jogarBtn.Click += new System.EventHandler(this.jogarBtn_Click);
+            this.JogarBtn.BackColor = System.Drawing.Color.LightGray;
+            this.JogarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.JogarBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
+            this.JogarBtn.FlatAppearance.BorderSize = 0;
+            this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.GreenYellow;
+            this.JogarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.JogarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.JogarBtn.Location = new System.Drawing.Point(433, 254);
+            this.JogarBtn.Name = "JogarBtn";
+            this.JogarBtn.Size = new System.Drawing.Size(139, 37);
+            this.JogarBtn.TabIndex = 1;
+            this.JogarBtn.Text = "JOGAR";
+            this.JogarBtn.UseVisualStyleBackColor = false;
+            this.JogarBtn.Click += new System.EventHandler(this.JogarBtn_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 262);
-            this.Controls.Add(this.jogarBtn);
-            this.Controls.Add(this.sairBtn);
+            this.BackgroundImage = global::EuroMilhoes.Properties.Resources.transferir;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(584, 362);
+            this.Controls.Add(this.JogarBtn);
+            this.Controls.Add(this.SairBtn);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Euro Milhões";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button sairBtn;
-        private System.Windows.Forms.Button jogarBtn;
+        private System.Windows.Forms.Button SairBtn;
+        private System.Windows.Forms.Button JogarBtn;
     }
 }
 
