@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace EuroMilhoes
 {
     public partial class Form2 : Form
     {
         private List<int> chli = new List<int>();
+        private List<int> chliE = new List<int>();
         public Form2()
         {
             InitializeComponent();
@@ -36,32 +38,44 @@ namespace EuroMilhoes
         private void JogarBtn2_Click(object sender, EventArgs e)
         {
 
+            label1.Text = "";
             chli.Add(Convert.ToInt32(textBox1.Text));
             chli.Add(Convert.ToInt32(textBox2.Text));
             chli.Add(Convert.ToInt32(textBox3.Text));
             chli.Add(Convert.ToInt32(textBox4.Text));
             chli.Add(Convert.ToInt32(textBox5.Text));
 
-            if (chli.Distinct().Count() != chli.Count())
+            chliE.Add(Convert.ToInt32(textBox6.Text));
+            chliE.Add(Convert.ToInt32(textBox7.Text));
+
+
+            
+
+            if (chli.Distinct().Count() != chli.Count() )
             {
-
-                foreach (var textbox in this.Controls.OfType<TextBox>())
-                {
-                    textbox.Clear();
-                }
-
-                foreach (int x in chli)
-                {
-                    Console.WriteLine(x);
-                }
+                label1.Text = "fds ";
+                textBox1.Clear();
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
                 chli.Clear();
-                
+                chliE.Clear();
+               
+            }
+            else if (chliE.Distinct().Count() != chliE.Count())
+            {
+                    label1.Text = "fds  E";
+                    textBox6.Clear();
+                    textBox7.Clear();
+                    chliE.Clear();
+                    chli.Clear();
             }
             else
             {
-                Chave ch = new Chave(chli);
-                
-                
+                   // Chave ch = new Chave(chli);
+
+
                 Chave chgen = new Chave();
                 textBoxGen1.Text = chgen.getListaN()[0].ToString();
                 textBoxGen2.Text = chgen.getListaN()[1].ToString();
@@ -72,6 +86,13 @@ namespace EuroMilhoes
                 textBoxEs1.Text = chgen.getListaE()[0].ToString();
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
                 chli.Clear();
+                chliE.Clear();
+
+            
+                
+            
+
+               
             }
             
 
@@ -90,7 +111,7 @@ namespace EuroMilhoes
 
                         textbox.Clear();
 
-
+                      
                     }
 
                 }
@@ -102,7 +123,8 @@ namespace EuroMilhoes
 
                 if (!String.IsNullOrEmpty(textBox1.Text) && !String.IsNullOrEmpty(textBox2.Text)
                         && !String.IsNullOrEmpty(textBox3.Text) && !String.IsNullOrEmpty(textBox4.Text)
-                        && !String.IsNullOrEmpty(textBox5.Text))
+                        && !String.IsNullOrEmpty(textBox5.Text) && !String.IsNullOrEmpty(textBox6.Text)
+                        && !String.IsNullOrEmpty(textBox7.Text))
                 {
                     JogarBtn2.Enabled = true;
                 }
@@ -110,8 +132,13 @@ namespace EuroMilhoes
                 {
                     JogarBtn2.Enabled = false;
                 }
-
+               
+              
             }
         }
+
+    
+
+      
     }
 }

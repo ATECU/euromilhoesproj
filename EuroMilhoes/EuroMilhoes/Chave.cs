@@ -42,10 +42,11 @@ namespace EuroMilhoes
 
         }
 
-        public Chave(List<int> machave)
+        public Chave(List<int> num, List<int> estrelas)
         {
-           
 
+            this.lista = num;
+            this.listaE = estrelas;
 
 
         }
