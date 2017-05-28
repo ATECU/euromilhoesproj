@@ -38,13 +38,13 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
+            this.textBoxEs2 = new System.Windows.Forms.TextBox();
+            this.textBoxEs1 = new System.Windows.Forms.TextBox();
+            this.textBoxGen5 = new System.Windows.Forms.TextBox();
+            this.textBoxGen4 = new System.Windows.Forms.TextBox();
+            this.textBoxGen3 = new System.Windows.Forms.TextBox();
+            this.textBoxGen2 = new System.Windows.Forms.TextBox();
+            this.textBoxGen1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // textBox1
@@ -56,7 +56,7 @@
             this.textBox1.Size = new System.Drawing.Size(54, 45);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox1.TextChanged += new System.EventHandler(this.numIn);
+            this.textBox1.TextChanged += new System.EventHandler(this.textIn);
             // 
             // JogarBtn2
             // 
@@ -74,6 +74,7 @@
             this.JogarBtn2.TabIndex = 16;
             this.JogarBtn2.Text = "JOGAR";
             this.JogarBtn2.UseVisualStyleBackColor = false;
+            this.JogarBtn2.Click += new System.EventHandler(this.JogarBtn2_Click);
             // 
             // SairBtn2
             // 
@@ -102,7 +103,7 @@
             this.textBox2.Size = new System.Drawing.Size(54, 45);
             this.textBox2.TabIndex = 18;
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox2.TextChanged += new System.EventHandler(this.numIn);
+            this.textBox2.TextChanged += new System.EventHandler(this.textIn);
             // 
             // textBox3
             // 
@@ -113,7 +114,7 @@
             this.textBox3.Size = new System.Drawing.Size(54, 45);
             this.textBox3.TabIndex = 19;
             this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox3.TextChanged += new System.EventHandler(this.numIn);
+            this.textBox3.TextChanged += new System.EventHandler(this.textIn);
             // 
             // textBox4
             // 
@@ -124,7 +125,7 @@
             this.textBox4.Size = new System.Drawing.Size(54, 45);
             this.textBox4.TabIndex = 20;
             this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox4.TextChanged += new System.EventHandler(this.numIn);
+            this.textBox4.TextChanged += new System.EventHandler(this.textIn);
             // 
             // textBox5
             // 
@@ -135,7 +136,7 @@
             this.textBox5.Size = new System.Drawing.Size(54, 45);
             this.textBox5.TabIndex = 21;
             this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox5.TextChanged += new System.EventHandler(this.numIn);
+            this.textBox5.TextChanged += new System.EventHandler(this.textIn);
             // 
             // textBox6
             // 
@@ -157,88 +158,110 @@
             this.textBox7.TabIndex = 23;
             this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox15
+            // textBoxEs2
             // 
-            this.textBox15.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox15.Location = new System.Drawing.Point(482, 176);
-            this.textBox15.Multiline = true;
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(54, 45);
-            this.textBox15.TabIndex = 30;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxEs2.BackColor = System.Drawing.Color.White;
+            this.textBoxEs2.Enabled = false;
+            this.textBoxEs2.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEs2.ForeColor = System.Drawing.Color.Black;
+            this.textBoxEs2.Location = new System.Drawing.Point(482, 176);
+            this.textBoxEs2.Multiline = true;
+            this.textBoxEs2.Name = "textBoxEs2";
+            this.textBoxEs2.Size = new System.Drawing.Size(54, 45);
+            this.textBoxEs2.TabIndex = 30;
+            this.textBoxEs2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox16
+            // textBoxEs1
             // 
-            this.textBox16.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox16.Location = new System.Drawing.Point(422, 176);
-            this.textBox16.Multiline = true;
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(54, 45);
-            this.textBox16.TabIndex = 29;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxEs1.BackColor = System.Drawing.Color.White;
+            this.textBoxEs1.Enabled = false;
+            this.textBoxEs1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxEs1.ForeColor = System.Drawing.Color.Black;
+            this.textBoxEs1.Location = new System.Drawing.Point(422, 176);
+            this.textBoxEs1.Multiline = true;
+            this.textBoxEs1.Name = "textBoxEs1";
+            this.textBoxEs1.Size = new System.Drawing.Size(54, 45);
+            this.textBoxEs1.TabIndex = 29;
+            this.textBoxEs1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox17
+            // textBoxGen5
             // 
-            this.textBox17.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox17.Location = new System.Drawing.Point(289, 176);
-            this.textBox17.Multiline = true;
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(54, 45);
-            this.textBox17.TabIndex = 28;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGen5.BackColor = System.Drawing.Color.White;
+            this.textBoxGen5.Enabled = false;
+            this.textBoxGen5.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGen5.ForeColor = System.Drawing.Color.Black;
+            this.textBoxGen5.Location = new System.Drawing.Point(289, 176);
+            this.textBoxGen5.Multiline = true;
+            this.textBoxGen5.Name = "textBoxGen5";
+            this.textBoxGen5.Size = new System.Drawing.Size(54, 45);
+            this.textBoxGen5.TabIndex = 28;
+            this.textBoxGen5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox18
+            // textBoxGen4
             // 
-            this.textBox18.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox18.Location = new System.Drawing.Point(229, 176);
-            this.textBox18.Multiline = true;
-            this.textBox18.Name = "textBox18";
-            this.textBox18.Size = new System.Drawing.Size(54, 45);
-            this.textBox18.TabIndex = 27;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGen4.BackColor = System.Drawing.Color.White;
+            this.textBoxGen4.Enabled = false;
+            this.textBoxGen4.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGen4.ForeColor = System.Drawing.Color.Black;
+            this.textBoxGen4.Location = new System.Drawing.Point(229, 176);
+            this.textBoxGen4.Multiline = true;
+            this.textBoxGen4.Name = "textBoxGen4";
+            this.textBoxGen4.Size = new System.Drawing.Size(54, 45);
+            this.textBoxGen4.TabIndex = 27;
+            this.textBoxGen4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox19
+            // textBoxGen3
             // 
-            this.textBox19.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox19.Location = new System.Drawing.Point(169, 176);
-            this.textBox19.Multiline = true;
-            this.textBox19.Name = "textBox19";
-            this.textBox19.Size = new System.Drawing.Size(54, 45);
-            this.textBox19.TabIndex = 26;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGen3.BackColor = System.Drawing.Color.White;
+            this.textBoxGen3.Enabled = false;
+            this.textBoxGen3.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGen3.ForeColor = System.Drawing.Color.Black;
+            this.textBoxGen3.Location = new System.Drawing.Point(169, 176);
+            this.textBoxGen3.Multiline = true;
+            this.textBoxGen3.Name = "textBoxGen3";
+            this.textBoxGen3.Size = new System.Drawing.Size(54, 45);
+            this.textBoxGen3.TabIndex = 26;
+            this.textBoxGen3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox20
+            // textBoxGen2
             // 
-            this.textBox20.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox20.Location = new System.Drawing.Point(109, 176);
-            this.textBox20.Multiline = true;
-            this.textBox20.Name = "textBox20";
-            this.textBox20.Size = new System.Drawing.Size(54, 45);
-            this.textBox20.TabIndex = 25;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGen2.BackColor = System.Drawing.Color.White;
+            this.textBoxGen2.Enabled = false;
+            this.textBoxGen2.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGen2.ForeColor = System.Drawing.Color.Black;
+            this.textBoxGen2.Location = new System.Drawing.Point(109, 176);
+            this.textBoxGen2.Multiline = true;
+            this.textBoxGen2.Name = "textBoxGen2";
+            this.textBoxGen2.Size = new System.Drawing.Size(54, 45);
+            this.textBoxGen2.TabIndex = 25;
+            this.textBoxGen2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox21
+            // textBoxGen1
             // 
-            this.textBox21.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox21.Location = new System.Drawing.Point(49, 176);
-            this.textBox21.Multiline = true;
-            this.textBox21.Name = "textBox21";
-            this.textBox21.Size = new System.Drawing.Size(54, 45);
-            this.textBox21.TabIndex = 24;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBoxGen1.BackColor = System.Drawing.Color.White;
+            this.textBoxGen1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.textBoxGen1.Enabled = false;
+            this.textBoxGen1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxGen1.ForeColor = System.Drawing.Color.Black;
+            this.textBoxGen1.Location = new System.Drawing.Point(49, 176);
+            this.textBoxGen1.Multiline = true;
+            this.textBoxGen1.Name = "textBoxGen1";
+            this.textBoxGen1.Size = new System.Drawing.Size(54, 45);
+            this.textBoxGen1.TabIndex = 24;
+            this.textBoxGen1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 362);
-            this.Controls.Add(this.textBox15);
-            this.Controls.Add(this.textBox16);
-            this.Controls.Add(this.textBox17);
-            this.Controls.Add(this.textBox18);
-            this.Controls.Add(this.textBox19);
-            this.Controls.Add(this.textBox20);
-            this.Controls.Add(this.textBox21);
+            this.Controls.Add(this.textBoxGen1);
+            this.Controls.Add(this.textBoxEs2);
+            this.Controls.Add(this.textBoxEs1);
+            this.Controls.Add(this.textBoxGen5);
+            this.Controls.Add(this.textBoxGen4);
+            this.Controls.Add(this.textBoxGen3);
+            this.Controls.Add(this.textBoxGen2);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox5);
@@ -255,6 +278,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Euro Milhões";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form2_FormClosed);
+            this.TextChanged += new System.EventHandler(this.textIn);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -271,12 +295,12 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
+        private System.Windows.Forms.TextBox textBoxEs2;
+        private System.Windows.Forms.TextBox textBoxEs1;
+        private System.Windows.Forms.TextBox textBoxGen5;
+        private System.Windows.Forms.TextBox textBoxGen4;
+        private System.Windows.Forms.TextBox textBoxGen3;
+        private System.Windows.Forms.TextBox textBoxGen2;
+        private System.Windows.Forms.TextBox textBoxGen1;
     }
 }

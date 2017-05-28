@@ -8,15 +8,59 @@ namespace EuroMilhoes
 {
     class Chave
     {
-        private int n1, n2, n3, n4, n5, e1, e2;
-        public Chave()
+        private int  num;
+
+        private Random rnd = new Random();
+        private List<int> lista = new List<int>();
+        private List<int> listaE = new List<int>();
+        public Chave() 
         {
+
+            for (int x = 0; x < 5; x++)
+            {
+                num = rnd.Next(1, 51);
+                do
+                {
+                    num = rnd.Next(1, 51);
+                } while (lista.Contains(num));
+                lista.Add(num);
+
+
+
+            }
+            for (int x = 0; x < 2; x++)
+            {
+                do
+                {
+                    num = rnd.Next(1, 13);
+                } while (listaE.Contains(num));
+                listaE.Add(num);
+
+
+
+            }
 
         }
 
-        public Chave(int n1, int n2, int n3, int n4, int n5, int e1, int e2)
+        public Chave(List<int> machave)
         {
+           
+
+
 
         }
+
+        public List<int> getListaN()
+        {
+            lista.Sort();
+
+            return this.lista;
+        }
+        public List<int> getListaE()
+        {
+            listaE.Sort();
+            return this.listaE;
+        }
+       
     }
 }
