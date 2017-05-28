@@ -199,6 +199,7 @@ namespace EuroMilhoes
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
                 + estrelas + "\n\n " + " GANHOU O " + premio + "º prémio!";
             }
+
             else if(numero != "" && estrelas == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
