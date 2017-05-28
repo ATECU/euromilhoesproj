@@ -39,6 +39,8 @@ namespace EuroMilhoes
         {
 
             label1.Text = "";
+            label2.Text = "";
+
             chli.Add(Convert.ToInt32(textBox1.Text));
             chli.Add(Convert.ToInt32(textBox2.Text));
             chli.Add(Convert.ToInt32(textBox3.Text));
@@ -73,10 +75,29 @@ namespace EuroMilhoes
             }
             else
             {
-                   // Chave ch = new Chave(chli);
-
-
+                Chave ch = new Chave(chli, chliE);
                 Chave chgen = new Chave();
+
+
+
+                    //to delete
+                foreach (int s in ch.compareNum(chgen))
+                {
+                    label1.Text += s.ToString() + " ";
+
+                }
+                label1.Text += "nr:  "+ ch.compareNum(chgen).Count();
+
+                foreach (int s in ch.compareEs(chgen))
+                {
+                    label2.Text += s.ToString() + " ";
+
+                }
+                label2.Text += "es:  " + ch.compareEs(chgen).Count();
+
+
+
+
                 textBoxGen1.Text = chgen.getListaN()[0].ToString();
                 textBoxGen2.Text = chgen.getListaN()[1].ToString();
                 textBoxGen3.Text = chgen.getListaN()[2].ToString();
@@ -85,10 +106,14 @@ namespace EuroMilhoes
 
                 textBoxEs1.Text = chgen.getListaE()[0].ToString();
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
+
+                
+
+
                 chli.Clear();
                 chliE.Clear();
 
-            
+                
                 
             
 
