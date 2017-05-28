@@ -100,5 +100,115 @@ namespace EuroMilhoes
 
             return numEs;
         }
+
+        public string premio(List<int> num, List<int> es)
+        {
+            string numero = "", estrelas = "", premio = "";
+
+            foreach (int x in num)
+            {
+                numero += x.ToString() + " ";
+            }
+            foreach(int x in es)
+            {
+                estrelas += x.ToString() + " ";
+            }
+
+
+
+            if (num.Count == 5 && es.Count == 2 )
+            {
+                premio = "1";
+            }
+            else if (num.Count == 5 && es.Count == 1)
+            {
+
+                premio = "2";
+            }
+            else if (num.Count == 5 && es.Count == 0)
+            {
+
+                premio = "3";
+            }
+            else if (num.Count == 4 && es.Count == 2)
+            {
+
+                premio = "4";
+            }
+            else if (num.Count == 4 && es.Count == 1)
+            {
+
+                premio = "5";
+            }
+            else if (num.Count == 3 && es.Count == 2)
+            {
+
+                premio = "6";
+            }
+            else if (num.Count == 4 && es.Count == 0)
+            {
+
+                premio = "7";
+            }
+            else if (num.Count == 2 && es.Count == 2)
+            {
+
+                premio = "8";
+            }
+            else if (num.Count == 3 && es.Count == 1)
+            {
+
+                premio = "9";
+            }
+            else if (num.Count == 3 && es.Count == 0)
+            {
+
+                premio = "10";
+            }
+            else if (num.Count == 1 && es.Count == 2)
+            {
+
+                premio = "11";
+            }
+            else if (num.Count == 2 && es.Count == 1)
+            {
+
+                premio = "12";
+            }
+            else if (num.Count == 2 && es.Count == 0)
+            {
+
+                premio = "13";
+            }
+            else
+            {
+                premio = "0";
+            }
+
+
+
+
+            if (premio == "0")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + " NAO GANHOU NENHUM PREMIO !!!";
+            }
+
+
+            if (estrelas != "" && numero == "")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+                + estrelas + "\n\n " + " GANHOU O " + premio + "º prémio!";
+            }
+            else if(numero != "" && estrelas == "")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+              + numero + "\n\n " + " GANHOU O " + premio + "º prémio!";
+            }
+
+
+            return num.Count + " Numeros + " + es.Count  + " estrelas \n\n" 
+                + numero + "                  " + estrelas + "\n\n " + " GANHOU O " + premio + "º PREMIO! ";
+        }
+
     }
 }

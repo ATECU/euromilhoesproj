@@ -39,8 +39,8 @@ namespace EuroMilhoes
         {
 
             label1.Text = "";
-            label2.Text = "";
 
+            
             chli.Add(Convert.ToInt32(textBox1.Text));
             chli.Add(Convert.ToInt32(textBox2.Text));
             chli.Add(Convert.ToInt32(textBox3.Text));
@@ -51,11 +51,10 @@ namespace EuroMilhoes
             chliE.Add(Convert.ToInt32(textBox7.Text));
 
 
-            
 
             if (chli.Distinct().Count() != chli.Count() )
             {
-                label1.Text = "fds ";
+                label1.Text = "nao inserir numeros repetidos";
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
@@ -67,7 +66,7 @@ namespace EuroMilhoes
             }
             else if (chliE.Distinct().Count() != chliE.Count())
             {
-                    label1.Text = "fds  E";
+                    label1.Text = "nao inserir estrelas repetidas";
                     textBox6.Clear();
                     textBox7.Clear();
                     chliE.Clear();
@@ -79,24 +78,18 @@ namespace EuroMilhoes
                 Chave chgen = new Chave();
 
 
-
-                    //to delete
-                foreach (int s in ch.compareNum(chgen))
-                {
-                    label1.Text += s.ToString() + " ";
-
-                }
-                label1.Text += "nr:  "+ ch.compareNum(chgen).Count();
-
-                foreach (int s in ch.compareEs(chgen))
-                {
-                    label2.Text += s.ToString() + " ";
-
-                }
-                label2.Text += "es:  " + ch.compareEs(chgen).Count();
+                chli.Sort();
+                textBox1.Text = chli[0].ToString();
+                textBox2.Text = chli[1].ToString();
+                textBox3.Text = chli[2].ToString();
+                textBox4.Text = chli[3].ToString();
+                textBox5.Text = chli[4].ToString();
 
 
+                chliE.Sort();
 
+                textBox6.Text = chliE[0].ToString();
+                textBox7.Text = chliE[1].ToString();
 
                 textBoxGen1.Text = chgen.getListaN()[0].ToString();
                 textBoxGen2.Text = chgen.getListaN()[1].ToString();
@@ -107,7 +100,9 @@ namespace EuroMilhoes
                 textBoxEs1.Text = chgen.getListaE()[0].ToString();
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
 
-                
+
+
+                MessageBox.Show(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
 
 
                 chli.Clear();
@@ -162,8 +157,12 @@ namespace EuroMilhoes
             }
         }
 
-    
-
-      
+        private void textBox1_TabIndexChanged(object sender, EventArgs e)
+        {
+            if (e.Equals(Keys.Tab))
+            {
+                textBox2.Focus();
+            }
+        }
     }
 }

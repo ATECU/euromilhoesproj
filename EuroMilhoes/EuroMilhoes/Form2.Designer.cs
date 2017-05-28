@@ -46,7 +46,6 @@
             this.textBoxGen2 = new System.Windows.Forms.TextBox();
             this.textBoxGen1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // textBox1
@@ -58,6 +57,7 @@
             this.textBox1.Size = new System.Drawing.Size(54, 45);
             this.textBox1.TabIndex = 0;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox1.TabIndexChanged += new System.EventHandler(this.textBox1_TabIndexChanged);
             this.textBox1.TextChanged += new System.EventHandler(this.textIn);
             // 
             // JogarBtn2
@@ -262,21 +262,11 @@
             this.label1.Size = new System.Drawing.Size(0, 13);
             this.label1.TabIndex = 31;
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(271, 274);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(43, 13);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "label2";
-            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(584, 362);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxGen1);
             this.Controls.Add(this.textBoxEs2);
@@ -326,6 +316,5 @@
         private System.Windows.Forms.TextBox textBoxGen2;
         private System.Windows.Forms.TextBox textBoxGen1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
     }
 }
