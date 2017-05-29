@@ -27,7 +27,7 @@ namespace EuroMilhoes
             Application.Exit();
         }
 
-     
+
 
         private void SairBtn2_Click(object sender, EventArgs e)
         {
@@ -38,9 +38,7 @@ namespace EuroMilhoes
         private void JogarBtn2_Click(object sender, EventArgs e)
         {
 
-            label1.Text = "";
-
-            
+           
             chli.Add(Convert.ToInt32(textBox1.Text));
             chli.Add(Convert.ToInt32(textBox2.Text));
             chli.Add(Convert.ToInt32(textBox3.Text));
@@ -52,25 +50,34 @@ namespace EuroMilhoes
 
 
 
-            if (chli.Distinct().Count() != chli.Count() )
+            if (chli.Distinct().Count() != chli.Count())
             {
-                label1.Text = "nao inserir numeros repetidos";
+                MessageBox.Show("Não inserir numeros repetidos");
                 textBox1.Clear();
                 textBox2.Clear();
                 textBox3.Clear();
                 textBox4.Clear();
                 textBox5.Clear();
                 chli.Clear();
-                chliE.Clear();
-               
-            }
-            else if (chliE.Distinct().Count() != chliE.Count())
-            {
-                    label1.Text = "nao inserir estrelas repetidas";
+                if (chliE.Distinct().Count() != chliE.Count())
+                {
+                    MessageBox.Show( "Não inserir estrelas repetidas");
                     textBox6.Clear();
                     textBox7.Clear();
                     chliE.Clear();
                     chli.Clear();
+                }
+                chliE.Clear();
+
+
+            }
+            else if (chliE.Distinct().Count() != chliE.Count())
+            {
+                MessageBox.Show("Não inserir estrelas repetidas");
+                textBox6.Clear();
+                textBox7.Clear();
+                chliE.Clear();
+                chli.Clear();
             }
             else
             {
@@ -108,17 +115,17 @@ namespace EuroMilhoes
                 chli.Clear();
                 chliE.Clear();
 
-                
-                
-            
 
-               
+
+
+
+
             }
-            
+
 
         }
 
-        
+
 
         private void textIn(object sender, EventArgs e)
         {
@@ -131,7 +138,7 @@ namespace EuroMilhoes
 
                         textbox.Clear();
 
-                      
+
                     }
 
                 }
@@ -142,9 +149,9 @@ namespace EuroMilhoes
                 }
 
                 if (!String.IsNullOrEmpty(textBox1.Text) && !String.IsNullOrEmpty(textBox2.Text)
-                        && !String.IsNullOrEmpty(textBox3.Text) && !String.IsNullOrEmpty(textBox4.Text)
-                        && !String.IsNullOrEmpty(textBox5.Text) && !String.IsNullOrEmpty(textBox6.Text)
-                        && !String.IsNullOrEmpty(textBox7.Text))
+                          && !String.IsNullOrEmpty(textBox3.Text) && !String.IsNullOrEmpty(textBox4.Text)
+                          && !String.IsNullOrEmpty(textBox5.Text) && !String.IsNullOrEmpty(textBox6.Text)
+                          && !String.IsNullOrEmpty(textBox7.Text))
                 {
                     JogarBtn2.Enabled = true;
                 }
@@ -152,8 +159,7 @@ namespace EuroMilhoes
                 {
                     JogarBtn2.Enabled = false;
                 }
-               
-              
+
             }
         }
 
@@ -164,5 +170,53 @@ namespace EuroMilhoes
                 textBox2.Focus();
             }
         }
-    }
+
+        private void textInEs(object sender, EventArgs e)
+        {
+
+            try
+            {
+
+                if (Convert.ToInt32(textBox6.Text) < 1 || Convert.ToInt32(textBox6.Text) > 12)
+                {
+
+                    textBox6.Clear();
+
+
+                }
+
+
+            }
+            catch (Exception o)
+            {
+                textBox6.Clear();
+                
+            }
+            try
+            {
+
+                if (Convert.ToInt32(textBox7.Text) < 1 || Convert.ToInt32(textBox7.Text) > 12)
+                {
+                    textBox7.Clear();
+                }
+            }
+            catch(Exception o)
+            {
+                textBox7.Clear();
+            }
+            if (!String.IsNullOrEmpty(textBox1.Text) && !String.IsNullOrEmpty(textBox2.Text)
+                        && !String.IsNullOrEmpty(textBox3.Text) && !String.IsNullOrEmpty(textBox4.Text)
+                        && !String.IsNullOrEmpty(textBox5.Text) && !String.IsNullOrEmpty(textBox6.Text)
+                        && !String.IsNullOrEmpty(textBox7.Text))
+            {
+                JogarBtn2.Enabled = true;
+            }
+            else
+            {
+                JogarBtn2.Enabled = false;
+            }
+        }
+
+     }  
+            
 }
