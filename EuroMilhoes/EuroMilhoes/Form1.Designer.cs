@@ -31,18 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.SairBtn = new System.Windows.Forms.Button();
             this.JogarBtn = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // SairBtn
             // 
-            this.SairBtn.BackColor = System.Drawing.Color.LightGray;
+            this.SairBtn.BackColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderSize = 0;
             this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
             this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SairBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SairBtn.Location = new System.Drawing.Point(434, 314);
+            this.SairBtn.Location = new System.Drawing.Point(223, 288);
             this.SairBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SairBtn.Name = "SairBtn";
             this.SairBtn.Size = new System.Drawing.Size(139, 37);
@@ -53,7 +55,7 @@
             // 
             // JogarBtn
             // 
-            this.JogarBtn.BackColor = System.Drawing.Color.LightGray;
+            this.JogarBtn.BackColor = System.Drawing.Color.White;
             this.JogarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.JogarBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.JogarBtn.FlatAppearance.BorderSize = 0;
@@ -61,7 +63,7 @@
             this.JogarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.JogarBtn.Location = new System.Drawing.Point(433, 254);
+            this.JogarBtn.Location = new System.Drawing.Point(223, 222);
             this.JogarBtn.Name = "JogarBtn";
             this.JogarBtn.Size = new System.Drawing.Size(139, 37);
             this.JogarBtn.TabIndex = 1;
@@ -69,13 +71,24 @@
             this.JogarBtn.UseVisualStyleBackColor = false;
             this.JogarBtn.Click += new System.EventHandler(this.JogarBtn_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::EuroMilhoes.Properties.Resources.logo_eurom;
+            this.pictureBox1.Location = new System.Drawing.Point(27, 57);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(530, 111);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::EuroMilhoes.Properties.Resources.transferir;
-            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.BackgroundImage = global::EuroMilhoes.Properties.Resources.bg;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(584, 362);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.JogarBtn);
             this.Controls.Add(this.SairBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -83,7 +96,9 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Euro Milhões";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -92,6 +107,7 @@
 
         private System.Windows.Forms.Button SairBtn;
         private System.Windows.Forms.Button JogarBtn;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

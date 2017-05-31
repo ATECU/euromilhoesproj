@@ -28,11 +28,17 @@ namespace EuroMilhoes
         private void JogarBtn_Click(object sender, EventArgs e)
         {
             Form2 frm = new Form2();
+            frm.Show(this);
             this.Hide();
-            frm.Show();
+           
         }
 
         private void SairBtn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
         }

@@ -18,20 +18,23 @@ namespace EuroMilhoes
         public Form2()
         {
             InitializeComponent();
+
             JogarBtn2.Enabled = false;
-
+            comboBox1.Items.Add("LUL");
+            comboBox1.Items.Add("LUsL");
+           
         }
 
-        private void Form2_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
+      
 
-
+      
 
         private void SairBtn2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
+
+            new Form1().Show();
+            this.Hide();
         }
 
 
@@ -163,13 +166,6 @@ namespace EuroMilhoes
             }
         }
 
-        private void textBox1_TabIndexChanged(object sender, EventArgs e)
-        {
-            if (e.Equals(Keys.Tab))
-            {
-                textBox2.Focus();
-            }
-        }
 
         private void textInEs(object sender, EventArgs e)
         {
@@ -217,6 +213,19 @@ namespace EuroMilhoes
             }
         }
 
-     }  
+        private void Form2_FormClosed_1(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            JogarBtn2.Enabled = false;
+           
+            
+
+
+        }
+    }  
             
 }
