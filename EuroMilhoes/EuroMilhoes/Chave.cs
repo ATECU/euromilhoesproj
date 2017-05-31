@@ -101,6 +101,23 @@ namespace EuroMilhoes
             return numEs;
         }
 
+
+        public string toFich()
+        {
+            string numSt = "";
+            string esSt = "";
+            foreach(int x in lista)
+            {
+                numSt += x.ToString() + "|";
+            }
+            foreach (int x in listaE)
+            {
+                esSt += x.ToString() + "|";
+
+            }
+            return numSt + esSt;
+        }
+
         public string premio(List<int> num, List<int> es)
         {
             string numero = "", estrelas = "", premio = "";

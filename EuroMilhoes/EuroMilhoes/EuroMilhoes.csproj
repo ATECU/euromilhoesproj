@@ -110,5 +110,11 @@
   <ItemGroup>
     <None Include="Images\bg-intro.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\1000px-Floppy_icon.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\star.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

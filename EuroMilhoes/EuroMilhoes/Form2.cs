@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.IO;
 
 namespace EuroMilhoes
 {
@@ -15,13 +16,12 @@ namespace EuroMilhoes
     {
         private List<int> chli = new List<int>();
         private List<int> chliE = new List<int>();
+        private List<string> stList = new List<string>();
+     
         public Form2()
         {
             InitializeComponent();
-
-            JogarBtn2.Enabled = false;
-            comboBox1.Items.Add("LUL");
-            comboBox1.Items.Add("LUsL");
+        
            
         }
 
@@ -110,6 +110,17 @@ namespace EuroMilhoes
                 textBoxEs1.Text = chgen.getListaE()[0].ToString();
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
 
+
+
+
+                escrevFich(ch.toFich());
+
+                stList = null;
+                stList = new List<string>();
+                stList.Add("");
+                lerFich();
+                refreshList(stList);
+                comboBox1.SelectedIndex = comboBox1.SelectedIndex;
 
 
                 MessageBox.Show(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
@@ -221,11 +232,81 @@ namespace EuroMilhoes
         private void Form2_Load(object sender, EventArgs e)
         {
             JogarBtn2.Enabled = false;
-           
-            
+            lerFich();
+            stList.Add("");
+            comboBox1.DataSource = stList;
+            comboBox1.SelectedIndex = -1;
+
+            JogarBtn2.Enabled = false;
+
+        }
+
+
+        private void lerFich()
+        {
+            if (File.Exists("numList.txt"))
+                {
+                StreamReader rd = new StreamReader(@"numList.txt");
+                while (!rd.EndOfStream)
+                {
+                    stList.Add(rd.ReadLine());
+
+                }
+
+                rd.Close();
+           }
+        }
+
+        private void escrevFich(string nums)
+        {
+
+            StreamWriter wr = new StreamWriter(@"numList.txt", true);
+            wr.WriteLine(nums);
+
+            wr.Close();
 
 
         }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string[] palavras;
+            
+            if (comboBox1.Text != "")
+            {
+                palavras = stList[comboBox1.SelectedIndex].Split('|');
+                textBox1.Text = palavras[0];
+                textBox2.Text = palavras[1];
+                textBox3.Text = palavras[2];
+                textBox4.Text = palavras[3];
+                textBox5.Text = palavras[4];
+                textBox6.Text = palavras[5];
+                textBox7.Text = palavras[6];
+            }
+            else
+            {
+                textBox1.Text = "";
+                textBox2.Text = "";
+                textBox3.Text = "";
+                textBox4.Text = "";
+                textBox5.Text = "";
+                textBox6.Text = "";
+                textBox7.Text = "";
+            }
+           
+          
+
+
+
+        }
+
+
+        public void refreshList(List<string> list)
+        {
+           
+            comboBox1.DataSource = list;
+        }
     }  
+
             
 }

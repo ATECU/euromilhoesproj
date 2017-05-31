@@ -47,6 +47,7 @@
             this.textBoxGen1 = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -55,7 +56,7 @@
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox1.Location = new System.Drawing.Point(49, 61);
+            this.textBox1.Location = new System.Drawing.Point(49, 90);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(54, 45);
@@ -72,7 +73,7 @@
             this.JogarBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JogarBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn2.ForeColor = System.Drawing.Color.Black;
-            this.JogarBtn2.Location = new System.Drawing.Point(12, 314);
+            this.JogarBtn2.Location = new System.Drawing.Point(49, 308);
             this.JogarBtn2.Name = "JogarBtn2";
             this.JogarBtn2.Size = new System.Drawing.Size(75, 23);
             this.JogarBtn2.TabIndex = 16;
@@ -88,7 +89,7 @@
             this.SairBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SairBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn2.ForeColor = System.Drawing.Color.Black;
-            this.SairBtn2.Location = new System.Drawing.Point(498, 314);
+            this.SairBtn2.Location = new System.Drawing.Point(461, 308);
             this.SairBtn2.Margin = new System.Windows.Forms.Padding(2);
             this.SairBtn2.Name = "SairBtn2";
             this.SairBtn2.Size = new System.Drawing.Size(75, 23);
@@ -103,7 +104,7 @@
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox2.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox2.Location = new System.Drawing.Point(109, 61);
+            this.textBox2.Location = new System.Drawing.Point(109, 90);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(54, 45);
@@ -117,7 +118,7 @@
             this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox3.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox3.Location = new System.Drawing.Point(169, 61);
+            this.textBox3.Location = new System.Drawing.Point(169, 90);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(54, 45);
@@ -131,7 +132,7 @@
             this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox4.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox4.Location = new System.Drawing.Point(229, 61);
+            this.textBox4.Location = new System.Drawing.Point(229, 90);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(54, 45);
@@ -145,7 +146,7 @@
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox5.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBox5.Location = new System.Drawing.Point(289, 61);
+            this.textBox5.Location = new System.Drawing.Point(289, 90);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(54, 45);
@@ -159,7 +160,7 @@
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox6.ForeColor = System.Drawing.Color.Black;
-            this.textBox6.Location = new System.Drawing.Point(422, 61);
+            this.textBox6.Location = new System.Drawing.Point(422, 90);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(54, 45);
@@ -173,7 +174,7 @@
             this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.textBox7.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox7.ForeColor = System.Drawing.Color.Black;
-            this.textBox7.Location = new System.Drawing.Point(482, 61);
+            this.textBox7.Location = new System.Drawing.Point(482, 90);
             this.textBox7.Multiline = true;
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(54, 45);
@@ -188,7 +189,7 @@
             this.textBoxEs2.Enabled = false;
             this.textBoxEs2.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEs2.ForeColor = System.Drawing.Color.Black;
-            this.textBoxEs2.Location = new System.Drawing.Point(482, 176);
+            this.textBoxEs2.Location = new System.Drawing.Point(482, 205);
             this.textBoxEs2.Multiline = true;
             this.textBoxEs2.Name = "textBoxEs2";
             this.textBoxEs2.Size = new System.Drawing.Size(54, 45);
@@ -202,7 +203,7 @@
             this.textBoxEs1.Enabled = false;
             this.textBoxEs1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxEs1.ForeColor = System.Drawing.Color.Black;
-            this.textBoxEs1.Location = new System.Drawing.Point(422, 176);
+            this.textBoxEs1.Location = new System.Drawing.Point(422, 205);
             this.textBoxEs1.Multiline = true;
             this.textBoxEs1.Name = "textBoxEs1";
             this.textBoxEs1.Size = new System.Drawing.Size(54, 45);
@@ -216,7 +217,7 @@
             this.textBoxGen5.Enabled = false;
             this.textBoxGen5.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGen5.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBoxGen5.Location = new System.Drawing.Point(289, 176);
+            this.textBoxGen5.Location = new System.Drawing.Point(289, 205);
             this.textBoxGen5.Multiline = true;
             this.textBoxGen5.Name = "textBoxGen5";
             this.textBoxGen5.Size = new System.Drawing.Size(54, 45);
@@ -230,7 +231,7 @@
             this.textBoxGen4.Enabled = false;
             this.textBoxGen4.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGen4.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBoxGen4.Location = new System.Drawing.Point(229, 176);
+            this.textBoxGen4.Location = new System.Drawing.Point(229, 205);
             this.textBoxGen4.Multiline = true;
             this.textBoxGen4.Name = "textBoxGen4";
             this.textBoxGen4.Size = new System.Drawing.Size(54, 45);
@@ -244,7 +245,7 @@
             this.textBoxGen3.Enabled = false;
             this.textBoxGen3.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGen3.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBoxGen3.Location = new System.Drawing.Point(169, 176);
+            this.textBoxGen3.Location = new System.Drawing.Point(169, 205);
             this.textBoxGen3.Multiline = true;
             this.textBoxGen3.Name = "textBoxGen3";
             this.textBoxGen3.Size = new System.Drawing.Size(54, 45);
@@ -258,7 +259,7 @@
             this.textBoxGen2.Enabled = false;
             this.textBoxGen2.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGen2.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBoxGen2.Location = new System.Drawing.Point(109, 176);
+            this.textBoxGen2.Location = new System.Drawing.Point(109, 205);
             this.textBoxGen2.Multiline = true;
             this.textBoxGen2.Name = "textBoxGen2";
             this.textBoxGen2.Size = new System.Drawing.Size(54, 45);
@@ -273,7 +274,7 @@
             this.textBoxGen1.Enabled = false;
             this.textBoxGen1.Font = new System.Drawing.Font("Consolas", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxGen1.ForeColor = System.Drawing.Color.RoyalBlue;
-            this.textBoxGen1.Location = new System.Drawing.Point(49, 176);
+            this.textBoxGen1.Location = new System.Drawing.Point(49, 205);
             this.textBoxGen1.Multiline = true;
             this.textBoxGen1.Name = "textBoxGen1";
             this.textBoxGen1.Size = new System.Drawing.Size(54, 45);
@@ -283,11 +284,13 @@
             // comboBox1
             // 
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(109, 316);
+            this.comboBox1.Location = new System.Drawing.Point(49, 41);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(367, 21);
+            this.comboBox1.Size = new System.Drawing.Size(427, 21);
             this.comboBox1.TabIndex = 31;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // button1
             // 
@@ -298,12 +301,31 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
-            this.button1.Location = new System.Drawing.Point(12, 274);
+            this.button1.Location = new System.Drawing.Point(49, 268);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 34);
             this.button1.TabIndex = 32;
             this.button1.Text = "↻";
             this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.Transparent;
+            this.button2.BackgroundImage = global::EuroMilhoes.Properties.Resources.star;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ForeColor = System.Drawing.Color.Gold;
+            this.button2.Location = new System.Drawing.Point(495, 25);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(41, 37);
+            this.button2.TabIndex = 33;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // Form2
             // 
@@ -312,6 +334,7 @@
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.BackgroundImage = global::EuroMilhoes.Properties.Resources.bg;
             this.ClientSize = new System.Drawing.Size(584, 362);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.textBoxGen1);
@@ -364,5 +387,6 @@
         private System.Windows.Forms.TextBox textBoxGen1;
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
