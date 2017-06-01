@@ -155,7 +155,6 @@ namespace EuroMilhoes
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            this.MaximizeBox = false;
             JogarBtn2.Enabled = false;
             lerFich();
            // stList.Add("");
@@ -163,6 +162,7 @@ namespace EuroMilhoes
             comboBox1.SelectedIndex = -1;
 
             JogarBtn2.Enabled = false;
+            this.MaximizeBox = false;
             if (!File.Exists(@"numList.txt"))
             {
                 File.Create(@"numList.txt");

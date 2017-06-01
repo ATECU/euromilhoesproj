@@ -90,16 +90,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\transferir.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Images\bg.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\download.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\download_A.jpg" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\unnamed.png" />
@@ -108,46 +99,13 @@
     <None Include="Images\logo-eurom.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\bg-intro.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\1000px-Floppy_icon.svg.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Images\star.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\google-icon-remarketing.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\loading_new.gif" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\icon_renew.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Images\undo_yellow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\1194986900622120592arrow07_3.svg.hi.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\WC_Icons-83.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\play-btn.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\left-arrow.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\play-button.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Images\play-button %281%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Images\exit.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\back.png" />
