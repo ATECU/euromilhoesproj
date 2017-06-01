@@ -21,6 +21,8 @@ namespace EuroMilhoes
         public Form2()
         {
             InitializeComponent();
+          
+
 
         }
 
@@ -160,9 +162,10 @@ namespace EuroMilhoes
             comboBox1.SelectedIndex = -1;
 
             JogarBtn2.Enabled = false;
-
-
-            
+            if (!File.Exists(@"numList.txt"))
+            {
+                File.Create(@"numList.txt");
+            }
 
         }
 
@@ -220,9 +223,6 @@ namespace EuroMilhoes
                 textBox7.Text = "";
             }
            
-          
-
-
 
         }
 

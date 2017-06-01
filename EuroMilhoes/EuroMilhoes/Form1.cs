@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace EuroMilhoes
 {
@@ -20,10 +21,7 @@ namespace EuroMilhoes
       
      
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
+     
 
         private void JogarBtn_Click(object sender, EventArgs e)
         {

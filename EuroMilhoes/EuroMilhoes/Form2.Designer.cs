@@ -71,7 +71,8 @@
             this.JogarBtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.JogarBtn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.JogarBtn2.FlatAppearance.BorderSize = 0;
-            this.JogarBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.GreenYellow;
+            this.JogarBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.JogarBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.JogarBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JogarBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn2.ForeColor = System.Drawing.Color.Black;
@@ -89,8 +90,8 @@
             this.SairBtn2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SairBtn2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.SairBtn2.FlatAppearance.BorderSize = 0;
-            this.SairBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.SairBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.SairBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.SairBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.SairBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SairBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn2.ForeColor = System.Drawing.Color.Black;
@@ -307,10 +308,10 @@
             this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button1.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button1.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Bauhaus 93", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.Black;
             this.button1.Location = new System.Drawing.Point(437, 21);
             this.button1.Name = "button1";
@@ -327,8 +328,8 @@
             this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.FlatAppearance.BorderColor = System.Drawing.Color.Black;
             this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.CornflowerBlue;
+            this.button2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Gray;
+            this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.DarkGray;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Font = new System.Drawing.Font("Consolas", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.ForeColor = System.Drawing.Color.Gold;
