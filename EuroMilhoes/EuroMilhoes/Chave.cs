@@ -207,25 +207,25 @@ namespace EuroMilhoes
 
             if (premio == "0")
             {
-                return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + " NAO GANHOU NENHUM PREMIO !!!";
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
 
 
             if (estrelas != "" && numero == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
-                + estrelas + "\n\n " + " GANHOU O " + premio + "º prémio!";
+                + estrelas + "\n\n " + " GANHOU O " + premio + "º PRÉMIO!";
             }
 
             else if(numero != "" && estrelas == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
-              + numero + "\n\n " + " GANHOU O " + premio + "º prémio!";
+              + numero + "\n\n " + " GANHOU O " + premio + "º PRÉMIO!";
             }
 
 
             return num.Count + " Numeros + " + es.Count  + " estrelas \n\n" 
-                + numero + "                  " + estrelas + "\n\n " + " GANHOU O " + premio + "º PREMIO! ";
+                + numero + "                  " + estrelas + "\n\n " + "GANHOU O " + premio + "º PRÉMIO ! ";
         }
 
     }
