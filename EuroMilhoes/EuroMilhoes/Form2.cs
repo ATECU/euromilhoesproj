@@ -176,6 +176,7 @@ namespace EuroMilhoes
                 {
                     stList.Add(rd.ReadLine());
 
+
                 }
 
                 rd.Close();
@@ -238,7 +239,12 @@ namespace EuroMilhoes
             if (valNUm()) {
 
                 Chave ch = new Chave(chli, chliE);
-                escrevFich(ch.toFich());
+
+                if (verFich())
+                {
+                    escrevFich(ch.toFich());
+
+                }
 
                 stList = null;
                 stList = new List<string>();
@@ -253,7 +259,25 @@ namespace EuroMilhoes
 
 
         }
+        private bool verFich()
+        {
 
+
+            int x = 0;
+            Chave ch = new Chave(chli, chliE);
+            foreach (string li in File.ReadLines(@"numList.txt") )
+            {
+                if (li.Contains(ch.toFich()))
+                {
+
+                    return false;
+                }
+                x++;
+            }
+
+
+            return true;
+        }
 
 
         private bool valNUm()
