@@ -40,7 +40,7 @@
             this.SairBtn.BackColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderSize = 0;
-            this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Red;
+            this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SairBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
@@ -59,7 +59,7 @@
             this.JogarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.JogarBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.JogarBtn.FlatAppearance.BorderSize = 0;
-            this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.GreenYellow;
+            this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.JogarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;

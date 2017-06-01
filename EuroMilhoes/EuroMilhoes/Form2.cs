@@ -356,6 +356,24 @@ namespace EuroMilhoes
             }
             return false;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            
+                Chave chgen = new Chave();
+
+                textBox1.Text = chgen.getListaN()[0].ToString();
+                textBox2.Text = chgen.getListaN()[1].ToString();
+                textBox3.Text = chgen.getListaN()[2].ToString();
+                textBox4.Text = chgen.getListaN()[3].ToString();
+                textBox5.Text = chgen.getListaN()[4].ToString();
+
+                textBox6.Text = chgen.getListaE()[0].ToString();
+                textBox7.Text = chgen.getListaE()[1].ToString();
+            
+            
+        }
     }  
 
             
