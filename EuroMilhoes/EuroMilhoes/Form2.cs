@@ -158,7 +158,7 @@ namespace EuroMilhoes
             this.MaximizeBox = false;
             JogarBtn2.Enabled = false;
             lerFich();
-            stList.Add("");
+           // stList.Add("");
             comboBox1.DataSource = stList;
             comboBox1.SelectedIndex = -1;
 
