@@ -197,7 +197,21 @@ namespace EuroMilhoes
 
                 premio = "13";
             }
-            else
+            else if (num.Count == 1 && es.Count == 0)
+            {
+                premio = "0a";
+            }else if (num.Count == 0 && es.Count == 1)
+            {
+                premio = "0b";
+            }
+            else if (num.Count == 1 && es.Count == 1)
+            {
+                premio = "0c";
+            }
+            else if (num.Count == 0 && es.Count == 2)
+            {
+                premio = "0d";
+            }else
             {
                 premio = "0";
             }
@@ -205,6 +219,27 @@ namespace EuroMilhoes
 
 
 
+
+            if (premio == "0a")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+                + numero + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
+            }
+            if (premio == "0b")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+                + estrelas + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
+            }
+            if (premio == "0c")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+                + numero + "                 " + estrelas + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
+            }
+            if (premio == "0d")
+            {
+                return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
+                + numero + "                 " + estrelas + "\n\n " +"NAO GANHOU NENHUM PRÉMIO !!!" ;
+            }
             if (premio == "0")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + "NAO GANHOU NENHUM PRÉMIO !!!";
