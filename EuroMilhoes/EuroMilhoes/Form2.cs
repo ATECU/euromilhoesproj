@@ -235,25 +235,33 @@ namespace EuroMilhoes
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int index = 0;
+            bool veri; 
             if (valNUm()) {
 
                 Chave ch = new Chave(chli, chliE);
-
-                if (verFich())
+                veri = verFich();
+                if (veri)
                 {
                     escrevFich(ch.toFich());
 
                 }
-
+                index = comboBox1.SelectedIndex;
+                
                 stList = null;
                 stList = new List<string>();
                 lerFich();
                 refreshList(stList);
-                comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
-
+                if (veri) {
+                    comboBox1.SelectedIndex = comboBox1.Items.Count - 1;
+                }
+                else
+                {
+                    comboBox1.SelectedIndex = index;
+                }
                 chli.Clear();
                 chliE.Clear();
+                
 
             }
 
