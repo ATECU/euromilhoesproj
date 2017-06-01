@@ -155,6 +155,7 @@ namespace EuroMilhoes
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            this.MaximizeBox = false;
             JogarBtn2.Enabled = false;
             lerFich();
             stList.Add("");

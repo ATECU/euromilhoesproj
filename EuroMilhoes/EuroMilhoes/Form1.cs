@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using System.Threading;
 
 namespace EuroMilhoes
 {
@@ -16,15 +17,12 @@ namespace EuroMilhoes
         public Form1()
         {
             InitializeComponent();
-        }
-
-      
-     
-
-     
+        }  
 
         private void JogarBtn_Click(object sender, EventArgs e)
         {
+
+            
             Form2 frm = new Form2();
             frm.Show(this);
             this.Hide();
@@ -41,6 +39,9 @@ namespace EuroMilhoes
             Application.Exit();
         }
 
-        
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            this.MaximizeBox = false;
+        }
     }
 }
