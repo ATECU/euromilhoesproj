@@ -214,13 +214,13 @@ namespace EuroMilhoes
             if (estrelas != "" && numero == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
-                + estrelas + "\n\n " + " GANHOU O " + premio + "º PRÉMIO!";
+                + estrelas + "\n\n " + " GANHOU O " + premio + "º PRÉMIO !";
             }
 
             else if(numero != "" && estrelas == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
-              + numero + "\n\n " + " GANHOU O " + premio + "º PRÉMIO!";
+              + numero + "\n\n " + " GANHOU O " + premio + "º PRÉMIO !";
             }
 
 
