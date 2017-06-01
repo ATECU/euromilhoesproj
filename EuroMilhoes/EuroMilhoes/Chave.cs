@@ -225,22 +225,22 @@ namespace EuroMilhoes
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
                 + numero + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
-            if (premio == "0b")
+            else if (premio == "0b")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
                 + estrelas + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
-            if (premio == "0c")
+            else if (premio == "0c")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
                 + numero + "                 " + estrelas + "\n\n " + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
-            if (premio == "0d")
+            else if (premio == "0d")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
-                + numero + "                 " + estrelas + "\n\n " +"NAO GANHOU NENHUM PRÉMIO !!!" ;
+                + estrelas + "\n\n " +"NAO GANHOU NENHUM PRÉMIO !!!" ;
             }
-            if (premio == "0")
+            else if (premio == "0")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
