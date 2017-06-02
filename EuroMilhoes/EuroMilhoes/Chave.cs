@@ -118,9 +118,10 @@ namespace EuroMilhoes
             return numSt + esSt;
         }
 
-        public string premio(List<int> num, List<int> es)
+        public List<string> premio(List<int> num, List<int> es)
         {
             string numero = "", estrelas = "", premio = "";
+            List<string> li = new List<string>();
 
             foreach (int x in num)
             {
@@ -216,9 +217,15 @@ namespace EuroMilhoes
                 premio = "0";
             }
 
+            li.Add(numero);
+            li.Add(estrelas);
+            li.Add(num.Count.ToString());
+            li.Add(es.Count.ToString());
+            li.Add(premio);
+            return li;
 
 
-
+            /*
 
             if (premio == "0a")
             {
@@ -245,7 +252,6 @@ namespace EuroMilhoes
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n" + "NAO GANHOU NENHUM PRÉMIO !!!";
             }
 
-
             if (estrelas != "" && numero == "")
             {
                 return num.Count + " Numeros + " + es.Count + " estrelas \n\n"
@@ -258,9 +264,10 @@ namespace EuroMilhoes
               + numero + "\n\n " + " GANHOU O " + premio + "º PRÉMIO !";
             }
 
-
+    
             return num.Count + " Numeros + " + es.Count  + " estrelas \n\n" 
                 + numero + "                  " + estrelas + "\n\n " + "GANHOU O " + premio + "º PRÉMIO ! ";
+            */
         }
 
     }

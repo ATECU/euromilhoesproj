@@ -58,6 +58,12 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -66,11 +72,16 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <None Include="Images\exit.png" />
+    <None Include="Images\play-button.png" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -109,6 +120,27 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Images\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\puzzle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\delete %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\delete-2-xxl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\previous.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\previous %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\rewind_track_button-512.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -37,19 +37,21 @@
             // 
             // SairBtn
             // 
-            this.SairBtn.BackColor = System.Drawing.Color.White;
+            this.SairBtn.BackColor = System.Drawing.Color.Transparent;
+            this.SairBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SairBtn.BackgroundImage")));
+            this.SairBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SairBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderSize = 0;
-            this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
+            this.SairBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
             this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.SairBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SairBtn.Location = new System.Drawing.Point(223, 288);
+            this.SairBtn.Location = new System.Drawing.Point(527, 11);
             this.SairBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SairBtn.Name = "SairBtn";
-            this.SairBtn.Size = new System.Drawing.Size(139, 37);
+            this.SairBtn.Size = new System.Drawing.Size(46, 47);
             this.SairBtn.TabIndex = 0;
-            this.SairBtn.Text = "SAIR";
             this.SairBtn.UseVisualStyleBackColor = false;
             this.SairBtn.Click += new System.EventHandler(this.SairBtn_Click);
             // 
@@ -58,14 +60,12 @@
             this.JogarBtn.BackColor = System.Drawing.Color.White;
             this.JogarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.JogarBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
-            this.JogarBtn.FlatAppearance.BorderSize = 0;
             this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.JogarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.JogarBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.JogarBtn.Location = new System.Drawing.Point(223, 222);
+            this.JogarBtn.ForeColor = System.Drawing.Color.Black;
+            this.JogarBtn.Location = new System.Drawing.Point(243, 292);
             this.JogarBtn.Name = "JogarBtn";
-            this.JogarBtn.Size = new System.Drawing.Size(139, 37);
+            this.JogarBtn.Size = new System.Drawing.Size(108, 46);
             this.JogarBtn.TabIndex = 1;
             this.JogarBtn.Text = "JOGAR";
             this.JogarBtn.UseVisualStyleBackColor = false;
@@ -75,9 +75,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::EuroMilhoes.Properties.Resources.logo_eurom;
-            this.pictureBox1.Location = new System.Drawing.Point(27, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 126);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(530, 111);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 111);
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 

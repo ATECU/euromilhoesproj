@@ -45,7 +45,6 @@ namespace EuroMilhoes
             {
                 Chave chgen = new Chave();
                 Chave ch = new Chave(chli,chliE);
-
                 textBoxGen1.Text = chgen.getListaN()[0].ToString();
                 textBoxGen2.Text = chgen.getListaN()[1].ToString();
                 textBoxGen3.Text = chgen.getListaN()[2].ToString();
@@ -54,8 +53,9 @@ namespace EuroMilhoes
 
                 textBoxEs1.Text = chgen.getListaE()[0].ToString();
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
-
-                MessageBox.Show(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
+                Form3 frm = new Form3(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
+                frm.Show();
+                //MessageBox.Show(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
                 chli.Clear();
                 chliE.Clear();
             }
@@ -374,6 +374,25 @@ namespace EuroMilhoes
                 textBox7.Text = chgen.getListaE()[1].ToString();
             
             
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            textBox3.Text = "";
+            textBox4.Text = "";
+            textBox5.Text = "";
+            textBox6.Text = "";
+            textBox7.Text = "";
+
+            textBoxGen1.Text = "";
+            textBoxGen2.Text = "";
+            textBoxGen3.Text = "";
+            textBoxGen4.Text = "";
+            textBoxGen5.Text = "";
+            textBoxEs1.Text = "";
+            textBoxEs2.Text = "";
         }
     }  
 
