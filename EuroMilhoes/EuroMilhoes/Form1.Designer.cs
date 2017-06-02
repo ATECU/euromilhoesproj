@@ -63,7 +63,7 @@
             this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
             this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn.ForeColor = System.Drawing.Color.Black;
-            this.JogarBtn.Location = new System.Drawing.Point(243, 292);
+            this.JogarBtn.Location = new System.Drawing.Point(238, 263);
             this.JogarBtn.Name = "JogarBtn";
             this.JogarBtn.Size = new System.Drawing.Size(108, 46);
             this.JogarBtn.TabIndex = 1;
