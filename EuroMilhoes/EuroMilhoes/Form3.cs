@@ -64,7 +64,7 @@ namespace EuroMilhoes
 
             if (premio[4] == "0a")
             {
-                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO !";
+                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO";
                 lbl1.Text = " " + premio[2] +  num + " + " + premio[3] + estrela;
                 lbl2.Text = " " + premio[0];
                 pictureBox1.Hide();
@@ -73,7 +73,7 @@ namespace EuroMilhoes
             else if (premio[4] == "0b")
             {
 
-                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO !";
+                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO";
                 lbl1.Text = " " + premio[2] + num + " + " + premio[3] + estrela;
                 lbl2.Text = " " + premio[0];
                 lbl3.Text = " " + premio[1];
@@ -82,7 +82,7 @@ namespace EuroMilhoes
             }
             else if (premio[4] == "0c")
             {
-                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO !";
+                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO";
                 lbl1.Text = " " + premio[2] + num + " + " + premio[3] + estrela;
                 lbl2.Text = " " + premio[0];
                 lbl3.Text = " " + premio[1];
@@ -90,14 +90,14 @@ namespace EuroMilhoes
             }
             else if (premio[4] == "0d")
             {
-                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO !";
+                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO";
                 lbl1.Text = " " + premio[2] + num + " + " + premio[3] + estrela;
                 lbl3.Text = " " + premio[1];
             }
             else if (premio[4] == "0")
             {
                 pictureBox1.Hide();
-                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO !";
+                lbl4.Text = "NÃO GANHOU NENHUM PRÉMIO";
                 lbl1.Text = " " + premio[2] + num + " + " + premio[3] + estrela;
             }
             else
