@@ -55,7 +55,6 @@ namespace EuroMilhoes
                 textBoxEs2.Text = chgen.getListaE()[1].ToString();
                 Form3 frm = new Form3(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
                 frm.Show();
-                //MessageBox.Show(ch.premio(ch.compareNum(chgen), ch.compareEs(chgen)));
                 chli.Clear();
                 chliE.Clear();
             }
@@ -157,7 +156,6 @@ namespace EuroMilhoes
         {
             JogarBtn2.Enabled = false;
             lerFich();
-           // stList.Add("");
             comboBox1.DataSource = stList;
             comboBox1.SelectedIndex = -1;
 
