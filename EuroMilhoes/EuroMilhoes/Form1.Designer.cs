@@ -37,17 +37,17 @@
             // 
             // SairBtn
             // 
-            this.SairBtn.BackColor = System.Drawing.Color.Transparent;
-            this.SairBtn.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("SairBtn.BackgroundImage")));
+            this.SairBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(54)))), ((int)(((byte)(103)))), ((int)(((byte)(150)))));
+            this.SairBtn.BackgroundImage = global::EuroMilhoes.Properties.Resources.exit__3_;
             this.SairBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.SairBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.SairBtn.FlatAppearance.BorderSize = 0;
             this.SairBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.LightSlateGray;
             this.SairBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSlateGray;
-            this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.SairBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SairBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.SairBtn.Location = new System.Drawing.Point(527, 11);
+            this.SairBtn.Location = new System.Drawing.Point(527, 304);
             this.SairBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SairBtn.Name = "SairBtn";
             this.SairBtn.Size = new System.Drawing.Size(46, 47);
@@ -61,9 +61,10 @@
             this.JogarBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.JogarBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.JogarBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
+            this.JogarBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.JogarBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn.ForeColor = System.Drawing.Color.Black;
-            this.JogarBtn.Location = new System.Drawing.Point(238, 263);
+            this.JogarBtn.Location = new System.Drawing.Point(238, 276);
             this.JogarBtn.Name = "JogarBtn";
             this.JogarBtn.Size = new System.Drawing.Size(108, 46);
             this.JogarBtn.TabIndex = 1;

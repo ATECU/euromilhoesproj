@@ -39,7 +39,7 @@
             this.OkBtn.FlatAppearance.BorderColor = System.Drawing.Color.White;
             this.OkBtn.FlatAppearance.BorderSize = 0;
             this.OkBtn.FlatAppearance.MouseDownBackColor = System.Drawing.Color.DarkGray;
-            this.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.OkBtn.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.OkBtn.Font = new System.Drawing.Font("Consolas", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.OkBtn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.OkBtn.Location = new System.Drawing.Point(127, 183);

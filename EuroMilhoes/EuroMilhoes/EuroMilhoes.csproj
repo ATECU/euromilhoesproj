@@ -142,5 +142,14 @@
   <ItemGroup>
     <None Include="Images\rewind_track_button-512.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exit %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Images\exit %283%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -74,6 +74,7 @@
             this.JogarBtn2.FlatAppearance.BorderSize = 0;
             this.JogarBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(201)))), ((int)(((byte)(44)))));
             this.JogarBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(237)))), ((int)(((byte)(201)))), ((int)(((byte)(44)))));
+            this.JogarBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.JogarBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.JogarBtn2.ForeColor = System.Drawing.Color.Black;
             this.JogarBtn2.Location = new System.Drawing.Point(12, 280);
@@ -92,6 +93,7 @@
             this.SairBtn2.FlatAppearance.BorderSize = 0;
             this.SairBtn2.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
             this.SairBtn2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.SairBtn2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.SairBtn2.Font = new System.Drawing.Font("Consolas", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.SairBtn2.ForeColor = System.Drawing.Color.Black;
             this.SairBtn2.Location = new System.Drawing.Point(516, 280);
